@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We Session Flex + Position</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+    .container{
+        width: 80%;
+        margin: auto;
+        margin-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .card {
+        width: 350px;
+        border: 1px solid rgb(224, 224, 224);
+        margin-bottom: 40px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    }
+
+    .card-img {
+        width: 100%;
+    }
+
+    .footer {
+        border-top: 1px solid black;
+    }
+
+    h3,
+    p {
+        margin: 5px 0px;
+    }
+
+    .box-img {
+        width: 100%;
+        position: relative;
+    }
+    .box-img>p{
+        position: absolute;
+        background-color: rgb(173, 172, 172);
+        bottom: 20px;
+        left: 10px;
+        font-size: 16px;
+        text-align: center;
+        padding: 8px 12px;
+        border-radius: 8px;
+        text-transform: uppercase;
+        font-weight: 540;
+    }
+    .box-img>p+p{
+        left: 160px;
+    }
+    .price{
+        display: flex;
+        width: 70%;
+        justify-content: space-between;
+    }
+    .card-heading{
+        color: rgb(4, 4, 53);
+        padding: 10px 0px 10px 10px;
+        font-size: 25px;
+    }
+    .card-text{
+        color: grey;
+        word-spacing: 5px;
+        font-size: 18px;
+        padding-left: 10px;
+    }
+    .price{
+        margin: 10px 0px 10px 10px;
+    }
+    .price>h3:first-child{
+        color: rgb(5, 5, 81);
+    }
+    .price>h3:nth-child(2){
+        text-decoration: line-through;
+        color: gray;
+    }
+    .price>h3:last-child{
+        color: rgb(1, 162, 111);
+    }
+    .card>div+p{
+        color: grey;
+    }
+</style>
+<style>
+
+</style>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="box-img">
+                <img src="https://raw.githubusercontent.com/Sourav12061999/nykaafashion/main/nykaa-clone/Kids%20Page/Images/img1.jpg"
+                    alt="" class="card-img">
+                <p>Bestseller</p>
+                <p>Offer</p>
+            </div>
+            <h3 class="card-heading">Pink Chick</h3>
+            <p class="card-text">Layer Party Dress- navy Multi</p>
+            <div class="price">
+                <h3>&#x20B9 1,800</h3>
+                <h3>&#x20B9 3,000</h3>
+                <h3>40% Off</h3>
+            </div>
+            <p>1-2 Years, 2-3 Years, 3-4 Years, 4-5 Years, 5-....</p>
+        </div>
+
+        <div class="card">
+            <div class="box-img">
+                <img src="https://raw.githubusercontent.com/Sourav12061999/nykaafashion/main/nykaa-clone/Kids%20Page/Images/img1.jpg"
+                    alt="" class="card-img">
+                <p>Editor's Pick</p>
+                <p>Offer</p>
+            </div>
+            <h3 class="card-heading">Pink Chick</h3>
+            <p class="card-text">Layer Party Dress- navy Multi</p>
+            <div class="price">
+                <h3>&#x20B9 1,800</h3>
+                <h3>&#x20B9 3,000</h3>
+                <h3>40% Off</h3>
+            </div>
+            <p>1-2 Years, 2-3 Years, 3-4 Years, 4-5 Years, 5-....</p>
+        </div>
+
+        <div class="card">
+            <div class="box-img">
+                <img src="https://raw.githubusercontent.com/Sourav12061999/nykaafashion/main/nykaa-clone/Kids%20Page/Images/img1.jpg"
+                    alt="" class="card-img">
+                <p>Bestseller</p>
+                <p>Offer</p>
+            </div>
+            <h3 class="card-heading">Pink Chick</h3>
+            <p class="card-text">Layer Party Dress- navy Multi</p>
+            <div class="price">
+                <h3>&#x20B9 1,800</h3>
+                <h3>&#x20B9 3,000</h3>
+                <h3>40% Off</h3>
+            </div>
+            <p>1-2 Years, 2-3 Years, 3-4 Years, 4-5 Years, 5-....</p>
+        </div>
+
+        <div class="card">
+            <div class="box-img">
+                <img src="https://raw.githubusercontent.com/Sourav12061999/nykaafashion/main/nykaa-clone/Kids%20Page/Images/img1.jpg"
+                    alt="" class="card-img">
+                <p>Bestseller</p>
+                <p>Offer</p>
+            </div>
+            <h3 class="card-heading">Pink Chick</h3>
+            <p class="card-text">Layer Party Dress- navy Multi</p>
+            <div class="price">
+                <h3>&#x20B9 1,800</h3>
+                <h3>&#x20B9 3,000</h3>
+                <h3>40% Off</h3>
+            </div>
+            <p>1-2 Years, 2-3 Years, 3-4 Years, 4-5 Years, 5-....</p>
+        </div>
+
+        <div class="card">
+            <div class="box-img">
+                <img src="https://raw.githubusercontent.com/Sourav12061999/nykaafashion/main/nykaa-clone/Kids%20Page/Images/img1.jpg"
+                    alt="" class="card-img">
+                <p>Bestseller</p>
+                <p>Offer</p>
+            </div>
+            <h3 class="card-heading">Pink Chick</h3>
+            <p class="card-text">Layer Party Dress- navy Multi</p>
+            <div class="price">
+                <h3>&#x20B9 1,800</h3>
+                <h3>&#x20B9 3,000</h3>
+                <h3>40% Off</h3>
+            </div>
+            <p>1-2 Years, 2-3 Years, 3-4 Years, 4-5 Years, 5-....</p>
+        </div>
+
+        <div class="card">
+            <div class="box-img">
+                <img src="https://raw.githubusercontent.com/Sourav12061999/nykaafashion/main/nykaa-clone/Kids%20Page/Images/img1.jpg"
+                    alt="" class="card-img">
+                <p>Bestseller</p>
+                <p>Offer</p>
+            </div>
+            <h3 class="card-heading">Pink Chick</h3>
+            <p class="card-text">Layer Party Dress- navy Multi</p>
+            <div class="price">
+                <h3>&#x20B9 1,800</h3>
+                <h3>&#x20B9 3,000</h3>
+                <h3>40% Off</h3>
+            </div>
+            <p>1-2 Years, 2-3 Years, 3-4 Years, 4-5 Years, 5-....</p>
+        </div>
+    </div>
+</body>
+
+</html>

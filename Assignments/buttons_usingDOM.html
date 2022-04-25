@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons using DOM</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<script>
+
+    var buttonObj = [
+        { name: "Primary", bgColor: "blue", color: "white" , padding: "15px 20px", margin: "10px", borderRadius: "10px", border: "none", fontSize: "40px"},
+        { name: "Secondary", bgColor: "gray", color: "white" , padding: "15px 20px", margin: "10px", borderRadius: "10px", border: "none", fontSize: "40px"},
+        { name: "Sucess", bgColor: "green", color: "white" , padding: "15px 20px", margin: "10px", borderRadius: "10px", border: "none", fontSize: "40px"},
+        { name: "Danger", bgColor: "red", color: "white", padding: "15px 20px" , margin: "10px", borderRadius: "10px", border: "none", fontSize: "40px"},
+        { name: "Warning", bgColor: "yellow", color: "balck" , padding: "15px 20px", margin: "10px", borderRadius: "10px", border: "none", fontSize: "40px"},
+        { name: "Info", bgColor: "cyan", color: "white" , padding: "15px 20x", margin: "10px", borderRadius: "6px", border: "none", fontSize: "40px"},
+        { name: "Light", bgColor: "white", color: "balck" , padding: "15px 20px", margin: "10px", borderRadius: "10px", border: "none", fontSize: "40px"},
+        { name: "Dark", bgColor: "black", color: "white", padding: "15px 20px", margin: "10px", borderRadius: "10px" , border: "none", fontSize: "40px"},
+        { name: "Link", bgColor: "white", color: "cyan" , padding: "15px 20px", margin: "10px", borderRadius: "10px", border: "none", fontSize: "40px"}
+    ]
+
+    buttonObj.forEach(function(el){
+        var btn = document.createElement("button")
+        btn.innerText = el.name
+        btn.style.backgroundColor = el.bgColor
+        btn.style.color = el.color
+        btn.style.padding = el.padding
+        btn.style.margin = el.margin
+        btn.style.border = el.border
+        btn.style.borderRadius = el.borderRadius
+        btn.style.fontSize = el.fontSize
+        document.querySelector("body").append(btn);
+    })
+</script>

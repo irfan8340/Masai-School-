@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Cobinator</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: sans-serif;
+        }
+        #heading{
+            width: 40%;
+            /* border: 2px solid red; */
+            margin:auto;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #heading>h1{
+            font-size: 50px;
+            color: rgb(9, 9, 63);
+            padding-bottom: 20px;
+        }
+        #heading>p{
+            line-height: 30px;
+            font-size: 18px;
+            color: gray;
+        }
+        #price-chart{
+            width: 60%;
+            margin: auto;
+            /* border: 2px solid red; */
+            margin-top: 60px;
+            display: flex;
+        }
+        #price-chart > div{
+            text-align: center;
+            width: 30%;
+            margin: auto;
+            /* border: 1px solid yellowgreen; */
+            padding: 20px 0px;
+        }
+        #price-chart>div:first-child{
+            margin-left: 0px;
+        }
+        #price-chart>div:last-child{
+            margin-right: 0px;
+        }
+        #price-chart>div>h2{
+            padding: 15px 0px;
+            color:  rgb(17, 17, 83);
+        }
+        #price-chart>div:nth-child(1)>h1{
+            color: rgb(19, 156, 108);
+        }
+        #price-chart>div:nth-child(2)>h1{
+            color: orange;
+        }
+        #price-chart>div:nth-child(3)>h1{
+            color: rgb(37, 37, 147);
+        }
+        #price-chart>div>h1+p{
+            color: gray;
+            font-size: 14px;
+            font-style: italic;
+        }
+        h1+p+p{
+            line-height: 25px;
+            padding: 25px 10px;
+            color: gray;
+        }
+        button{
+            padding: 10px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            border: 2px solid rgb(55, 88, 221);
+            background-color: white;
+            color: rgb(55, 88, 221);
+            border-radius: 6px;
+        }
+        button:hover{
+            color: white;
+            background-color: rgb(55, 88, 221);
+            /* background-color: orange; */
+        }
+    </style>
+</head>
+<body>
+    <div id="heading">
+        <h1>Choose a plan that right for your business</h1>
+        <p>We collect reviews from our users so you can get an honest opinion of what an experience with our website are really like!</p>
+    </div>
+
+    <div id="price-chart">
+        <div>
+            <h2>Starter Plan</h2>
+            <h1>Free</h1>
+            <p>Per month</p>
+            <p>We collect reviews from our users so you can get an honest opinion of what an experience with our website are really like!</p>
+            <button>Start Now</button>
+        </div>
+        <div>
+            <h2>Business Plan</h2>
+            <h1>$39.00</h1>
+            <p>Per month</p>
+            <p>We collect reviews from our users so you can get an honest opinion of what an experience with our website are really like!</p>
+            <button>Start Now</button>
+        </div>
+        <div>
+            <h2>Premium Plan</h2>
+            <h1>$59.00</h1>
+            <p>Per month</p>
+            <p>We collect reviews from our users so you can get an honest opinion of what an experience with our website are really like!</p>
+            <button>Start Now</button>
+        </div>
+    </div>
+</body>
+</html>

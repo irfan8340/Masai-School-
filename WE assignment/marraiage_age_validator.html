@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marriage age</title>
+</head>
+<body>
+    <select name="" id="gender">
+        <option value="">Select gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+    </select>
+    <input type="number" placeholder="enter birth year" id="birth-year">
+    <button onclick="checkValidAge()">Submit</button>
+</body>
+</html>
+
+<script>
+    function checkValidAge(){
+
+        var age = document.getElementById("birth-year").value
+        var currentYear = 2022;
+        var newAge = currentYear-age;
+        if(newAge >= 21)
+        {
+            alert("You can marry whomever you want!")
+        }
+        else
+        {
+            alert("You can't marry Sorry!")
+        }
+    }
+</script>

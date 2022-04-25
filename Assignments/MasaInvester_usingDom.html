@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masai invester using DOM</title>
+    <style>
+         *{
+            font-family: sans-serif;
+        }
+        .head1{
+            font-size: 40px;
+            text-align: center;
+            font-weight: bold;
+        }
+        #container{
+            display: grid;
+            width: 80%;
+            margin: 40px auto;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: auto;
+            gap: 25px;
+        }
+        #container>div{
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border-radius: 10px;
+            padding-bottom: 10px;
+        }
+        #container>div>img:first-child{
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            width: 100%;
+        }
+        #container>div>h3{
+            font-size: 24px;
+            font-weight: 300px;
+            text-align: center;
+            margin: 10px 0px;
+        }
+        h3+p{
+            color: gray;
+            text-align: center;
+            font-size: 17px;
+            margin: 0px 0px;
+        }
+        #container>div>img:last-child{
+            width: 50%;
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    var h1 = document.createElement("h1")
+    h1.setAttribute("class", "head1")
+    h1.innerText = "Strategic Investors"
+
+    var container = document.createElement("div")
+    container.setAttribute("id", "container");
+
+    var cardDiv1 = document.createElement("div")
+        var img = document.createElement("img")
+            img.setAttribute("src", "https://masai-website-images.s3.ap-south-1.amazonaws.com/Vijay_Shekhar_Sharma_Paytm_96f52579b8.jpg")
+
+        var h3 = document.createElement("h3")
+            h3.innerText = "Vijay Shekhar Sharma"
+
+        var p = document.createElement("p")
+            p.innerText = "Founder & CEO"
+
+        var logo = document.createElement("img")
+            logo.setAttribute("src", "https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg")
+    cardDiv1.append(img, h3, p, logo)
+
+    var cardDiv2 = document.createElement("div")
+    var img = document.createElement("img")
+            img.setAttribute("src", "https://masai-website-images.s3.ap-south-1.amazonaws.com/Rectangle_427_637d69bb57.png")
+
+        var h3 = document.createElement("h3")
+            h3.innerText = "Kunal Shah"
+
+        var p = document.createElement("p")
+            p.innerText = "Founder"
+
+        var logo = document.createElement("img")
+            logo.setAttribute("src", "https://masai-website-images.s3.ap-south-1.amazonaws.com/cred_0a47d7b4f8.png")
+    cardDiv2.append(img, h3, p, logo)
+
+
+    var cardDiv3 = document.createElement("div")
+    var img = document.createElement("img")
+            img.setAttribute("src", "https://masai-website-images.s3.ap-south-1.amazonaws.com/amrish_rau_pine_labs_144e5e587c.jpg")
+
+        var h3 = document.createElement("h3")
+            h3.innerText = "Amrish Rau"
+
+        var p = document.createElement("p")
+            p.innerText = "CEO"
+
+        var logo = document.createElement("img")
+            logo.setAttribute("src", "https://masai-website-images.s3.ap-south-1.amazonaws.com/pine_labs_0aa2407434.png")
+    cardDiv3.append(img, h3, p, logo)
+
+
+    var cardDiv4 = document.createElement("div")
+    var img = document.createElement("img")
+            img.setAttribute("src", "https://masai-website-images.s3.ap-south-1.amazonaws.com/Sampad_swain_Instamojo_f12bf6341e.jpg")
+
+        var h3 = document.createElement("h3")
+            h3.innerText = "Sampad Swain"
+
+        var p = document.createElement("p")
+            p.innerText = "Co-Founder & CEO"
+
+        var logo = document.createElement("img")
+            logo.setAttribute("src", "https://masai-website-images.s3.ap-south-1.amazonaws.com/instamojo_8763e704f7.png")
+    cardDiv4.append(img, h3, p, logo)
+
+
+    container.append(cardDiv1, cardDiv2, cardDiv3, cardDiv4)
+    document.querySelector("body").append(h1, container);
+
+</script>

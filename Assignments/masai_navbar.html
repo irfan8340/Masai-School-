@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masai navbar</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: sans-serif;
+        }
+        .top{
+            width: 100%;
+            background-color: black;
+            color: white;
+            padding: 12px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .top>p{
+            display: inline-block;
+            padding-right: 10px;
+            word-spacing: 2px;
+        }
+        .top>button{
+            border: none;
+            color: red;
+            padding: 10px 20px;
+            background-color: black;
+            font-weight: bold;
+        }
+        .navbar{
+            width: 100%;
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: space-around;
+            padding: 20px 0px;
+            align-items: center;
+        }
+        .text{
+            width: 45%;
+            display: flex;
+            /* border: 1px solid red; */
+            justify-content: space-between;
+            padding-right: -10px;
+            align-items: center;
+        }
+        .navbar>div>button{
+            padding: 14px 16px;
+            background-color: white;
+            border: 1px solid red;
+            color: red;
+            font-weight: 550;
+            border-radius: 6px;
+        }
+        .text p:hover{
+            color: red;
+        }
+        .text>button:hover{
+            background-color: rgb(243, 205, 205);
+        }
+        .text>p{
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <p>Register for The Coding Classroom and learn the basics of web development for free.</p>
+        <button>REGISTER  &nbsp; ></button>
+    </div>
+    <div class="navbar">
+        <img src="https://www.masaischool.com/img/navbar/logo.svg" alt="Masai">
+       <div class="text">
+            <p>COURSES</p>
+            <p>FEES & ISA</p>
+            <p>ABOUT US</p>
+            <p>HIRE FROM US</p>
+            <p>FAQ</p>
+            <p>EVENTS</p>
+            <button>LOGIN</button>
+       </div>
+    </div>
+</body>
+</html>

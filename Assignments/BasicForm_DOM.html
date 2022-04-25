@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Basic DOM</title>
+    <style>
+        input {
+            margin: 20px;
+        }
+
+        form {
+            width: 80%;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <label for="name">Enter Your Name</label>
+        <input type="text" name="name" id="name">
+        <br>
+        <label for="age">Enter Age</label>
+        <input type="number" name="age" id="age">
+        <br>
+        <label for="gender">Select Gender</label>
+        <select name="gender" id="gender">
+            <option value="">Select gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+        <br>
+        <label for="email">Enter Email</label>
+        <input type="email" name="email" id="eml">
+        <br>
+        <label for="mob">Enter Phone Number</label>
+        <input type="Number" name="mob" id="mob">
+        <br>
+        <input type="submit" value="submit">
+    </form>
+</body>
+
+</html>
+
+<script>
+
+    document.querySelector("form").addEventListener("submit", PrintInfo)
+    function PrintInfo() {
+        event.preventDefault()
+        var nam = document.querySelector("#name").value
+        var age = document.querySelector("#age").value
+        var gender = document.querySelector("#gender").value
+        var email = document.querySelector("#eml").value
+        var mob = document.querySelector("#mob").value
+
+        console.log(nam, age, gender, email, mob)
+    }
+</script>
